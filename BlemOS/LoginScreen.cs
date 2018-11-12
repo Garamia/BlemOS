@@ -24,7 +24,7 @@ namespace BlemOS.Main
             if(UserRegistry.checkPassword(txtUsername.Text, txtPassword.Text))
             {
 
-                this.pnlLoadingContrainer.Visible = true;
+                this.pnlLoadingContainer.Visible = true;
                 Desktop desktop = new Desktop();
                 desktop.Shown += new System.EventHandler(handleLoad);
                 desktop.Show();

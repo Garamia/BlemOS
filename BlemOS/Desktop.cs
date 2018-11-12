@@ -58,7 +58,6 @@ namespace BlemOS.Main
         {
             RegisterApps.registerapps();
             apps = AppRegistry.listApps();
-            this.SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint, true);
         }
 
         private void button4_Click(object sender, EventArgs e)

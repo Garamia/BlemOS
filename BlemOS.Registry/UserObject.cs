@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace BlemOS.Registry
 {
+    /// <summary>
+    /// A layout for each User in the PersistenSettings
+    /// </summary>
     public class UserObject
     {
         public string Username { get; set; }

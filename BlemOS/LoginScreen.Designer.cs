@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.pnlLoginContainer = new System.Windows.Forms.Panel();
+            this.pnlLoadingContainer = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblText = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
-            this.lblText = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pnlLoadingContrainer = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pnlLoginContainer.SuspendLayout();
-            this.pnlLoadingContrainer.SuspendLayout();
+            this.pnlLoadingContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlLoginContainer
             // 
             this.pnlLoginContainer.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlLoginContainer.Controls.Add(this.pnlLoadingContrainer);
+            this.pnlLoginContainer.Controls.Add(this.pnlLoadingContainer);
             this.pnlLoginContainer.Controls.Add(this.button1);
             this.pnlLoginContainer.Controls.Add(this.lblText);
             this.pnlLoginContainer.Controls.Add(this.btnLogin);
@@ -57,6 +57,48 @@
             this.pnlLoginContainer.Name = "pnlLoginContainer";
             this.pnlLoginContainer.Size = new System.Drawing.Size(324, 255);
             this.pnlLoginContainer.TabIndex = 5;
+            // 
+            // pnlLoadingContainer
+            // 
+            this.pnlLoadingContainer.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlLoadingContainer.Controls.Add(this.label1);
+            this.pnlLoadingContainer.Location = new System.Drawing.Point(0, 0);
+            this.pnlLoadingContainer.Name = "pnlLoadingContainer";
+            this.pnlLoadingContainer.Size = new System.Drawing.Size(324, 255);
+            this.pnlLoadingContainer.TabIndex = 12;
+            this.pnlLoadingContainer.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(91, 109);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(142, 33);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Loading...";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(227, 145);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblText
+            // 
+            this.lblText.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblText.AutoSize = true;
+            this.lblText.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText.Location = new System.Drawing.Point(111, 9);
+            this.lblText.Name = "lblText";
+            this.lblText.Size = new System.Drawing.Size(86, 33);
+            this.lblText.TabIndex = 10;
+            this.lblText.Text = "Login";
             // 
             // btnLogin
             // 
@@ -116,48 +158,6 @@
             this.txtUsername.Size = new System.Drawing.Size(186, 33);
             this.txtUsername.TabIndex = 5;
             // 
-            // lblText
-            // 
-            this.lblText.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblText.AutoSize = true;
-            this.lblText.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblText.Location = new System.Drawing.Point(111, 9);
-            this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(86, 33);
-            this.lblText.TabIndex = 10;
-            this.lblText.Text = "Login";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(227, 145);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pnlLoadingContrainer
-            // 
-            this.pnlLoadingContrainer.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlLoadingContrainer.Controls.Add(this.label1);
-            this.pnlLoadingContrainer.Location = new System.Drawing.Point(0, 0);
-            this.pnlLoadingContrainer.Name = "pnlLoadingContrainer";
-            this.pnlLoadingContrainer.Size = new System.Drawing.Size(324, 255);
-            this.pnlLoadingContrainer.TabIndex = 12;
-            this.pnlLoadingContrainer.Visible = false;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(91, 109);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 33);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Loading...";
-            // 
             // LoginScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,8 +171,8 @@
             this.Load += new System.EventHandler(this.LoginScreen_Load);
             this.pnlLoginContainer.ResumeLayout(false);
             this.pnlLoginContainer.PerformLayout();
-            this.pnlLoadingContrainer.ResumeLayout(false);
-            this.pnlLoadingContrainer.PerformLayout();
+            this.pnlLoadingContainer.ResumeLayout(false);
+            this.pnlLoadingContainer.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -187,7 +187,7 @@
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label lblText;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel pnlLoadingContrainer;
+        private System.Windows.Forms.Panel pnlLoadingContainer;
         private System.Windows.Forms.Label label1;
     }
 }

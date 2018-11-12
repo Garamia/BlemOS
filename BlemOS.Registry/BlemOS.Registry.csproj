@@ -64,7 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppRegistry.cs" />
-    <Compile Include="PasswordRegistry.cs" />
+    <Compile Include="PasswordGeneration.cs" />
     <Compile Include="PersistentSettings.cs" />
     <Compile Include="PersistentSettingsObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
